@@ -1,9 +1,6 @@
-import css from "./Loader.module.css";
+import { FadeLoader } from "react-spinners";
+import scc from './Loader.module.css';
 
 export default function Loader() {
-  return (
-    <div className={css.loaderContainer}>
-      <div className={css.spinner}></div>
-    </div>
-  );
+    return <div className={scc.fade}>{<FadeLoader height={20} color="#6de422"/>}</div>
 }
